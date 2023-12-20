@@ -1,14 +1,10 @@
 {
-    "baseUrl" : "https://gmail.com",
-    "reporter": "cypress-multi-reporters",
-    "reporterOptions": {
-        "reporterEnabled": "mochawesome",
-        "mochawesomeReporterOptions": {
-            "reportDir": "cypress/reports/mocha",
-            "quite": true,
-            "overwrite": false,
-            "html": false,
-            "json": true
-        }
+    "video": false,
+    "ignoreTestFiles": ["*.js", "*.md"],
+    "chromeWebSecurity": false,
+    "testFiles": "**/*.feature",
+    "env": {
+        "TAGS": "not @ignore"
     }
-}
+  }
+  
